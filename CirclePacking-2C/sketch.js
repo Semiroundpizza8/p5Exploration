@@ -46,8 +46,9 @@ function createCircles(radius, numberOfCircles) {
   for (var k = 0; k < newCircles.length; k++) {
     let circle = newCircles[k];
     noStroke();
-    let hue = map(circle.y, circle.r, height - circle.r, 0, 100)
-    fill(200+hue, 30, 70);
+    let hue = map(circle.y, circle.r, height - circle.r, 0, 100);
+    let sat = map(circle.x, circle.r, width - circle.r, 0, 50);
+    fill(200 + hue + random(-30, 10), 15 + sat, 70);
     ellipse(circle.x, circle.y, circle.r * 2, circle.r * 2);
   }
 
@@ -59,7 +60,8 @@ function setup() {
   createCanvas(514, 514);
   colorMode(HSB, 360, 100, 100, 1.0);
   background(90);
-  createCircles(75, 1);
+  // createCircles(100, 3);
+  createCircles(75, 3);
   createCircles(50, 10);
   createCircles(25, 20);
   createCircles(10, 200);
