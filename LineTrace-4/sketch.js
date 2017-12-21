@@ -2,9 +2,8 @@ let pastLine = [];
 let currLine = [];
 let circles = [];
 
-let circleFill = (x1, x2, y1, y2, sat) => {
+let circleFill = (x1, x2, y1, y2) => {
   // Guards from infinite loops
-  circles = [];
   var guard = 0;
   while (circles.length < 50000) {
 
@@ -14,7 +13,7 @@ let circleFill = (x1, x2, y1, y2, sat) => {
     var circle = {
       x: random(width),
       y: random(height),
-      r: random(1, 20)
+      r: random(2, 76)
     }
     circles.push({x:width/2,
                   y: height/2,
@@ -46,16 +45,16 @@ let circleFill = (x1, x2, y1, y2, sat) => {
     let circle = circles[k];
     switch (k % 4) {
       case 0:
-        fill(255, 0, 150, sat);
+        fill(255, 0, 150);
         break;
       case 1:
-        fill(150, 0, 255, sat);
+        fill(150, 0, 255);
         break;
       case 2:
-        fill(55, 55, 55, sat);
+        fill(55, 55, 55);
         break;
       case 3:
-        fill(150, 150, 150, sat);
+        fill(150, 150, 150);
         break;
     }
     noStroke();
@@ -64,11 +63,11 @@ let circleFill = (x1, x2, y1, y2, sat) => {
 }
 
 function setup() {
-  // // // put setup code here
+  // // put setup code here
   createCanvas(771, 771);
   background(255);
   let r = 2;
-  stroke(220);
+  stroke(200);
   noFill();
   for (i = 20; i < width - 20; i = i + 2) {
     for (j = 20; j < height; j++) {
@@ -82,11 +81,9 @@ function setup() {
       }
     }
   }
-
-  circleFill(100, 420, 100, 420, 300);
-  circleFill(400, 600, 200, 400, 100);
-  circleFill(200, 400, 400, 600, 100);
-  circleFill(380, 700, 380, 700, 300);
+  fill(150, 0, 255);
+  noStroke();
+  circleFill(100, 700, 100, 700);
 }
 
 function draw() {
