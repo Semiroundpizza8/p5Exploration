@@ -40,25 +40,11 @@ function setup() {
     }
   }
 
-  for (var k = 0; k < circles.length; k++) {
-    let circle = circles[k];
-    switch (k % 4) {
-      case 0:
-        fill(255, 0, 150, 100);
-        break;
-      case 1:
-        fill(150, 0, 255, 100);
-        break;
-      case 2:
-        fill(55, 55, 55, 100);
-        break;
-      case 3:
-        fill(150, 150, 150, 100);
-        break;
-    }
+  circles.forEach(circle => {
+    fill(255, 0, 150, 100);
     noStroke();
     ellipse(circle.x, circle.y, circle.r * 2, circle.r * 2);
-  }
+  })
 }
 
 function draw() {
