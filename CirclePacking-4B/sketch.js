@@ -12,6 +12,10 @@ function setup() {
   masterCircle.run();
 }
 
+function mouseClicked() {
+  saveCanvas('Circle4B', 'jpeg')
+}
+
 function draw() {
   // put drawing code here
 }

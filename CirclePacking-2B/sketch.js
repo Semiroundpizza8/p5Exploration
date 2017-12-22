@@ -68,6 +68,10 @@ function setup() {
   createCircles(1, 2000);
 }
 
+function mouseClicked() {
+  saveCanvas('Circle2B', 'jpeg')
+}
+
 function draw() {
   // put drawing code here
 }

@@ -61,18 +61,22 @@ function createCircles(radius, numberOfCircles, containerR) {
 
 function setup() {
   // put setup code here
-  createCanvas(514, 514);
+  createCanvas(1028, 1028);
   colorMode(HSB, 360, 100, 100, 1.0);
-  background(90);
+  background(100);
   // createCircles(100, 3);
   // createCircles(75, 3);
   // createCircles(49, 6);
   // createCircles(50, 10, 100);
   // createCircles(25, 20);
-  createCircles(10, 200, 350);
-  createCircles(5, 200, 300);
-  createCircles(2, 2000, 200);
-  createCircles(1, 2000, 150);
+  createCircles(10, 400, 700);
+  createCircles(6, 400, 600);
+  createCircles(4, 4000, 400);
+  createCircles(2, 4000, 300);
+}
+
+function mouseClicked() {
+  saveCanvas('Circle4A', 'jpeg')
 }
 
 function draw() {

@@ -89,6 +89,10 @@ function setup() {
   circleFill(380, 700, 380, 700, 300);
 }
 
+function mouseClicked() {
+  saveCanvas('Line', 'jpeg')
+}
+
 function draw() {
   // put drawing code here
 
