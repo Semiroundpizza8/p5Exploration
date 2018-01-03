@@ -16,7 +16,6 @@ Circle.prototype.run = function () {
   for (var i=0; i<this.children.length; i++) {
       this.children[i].run();
   }
-  
 };
 
 Circle.prototype.draw = function () {
