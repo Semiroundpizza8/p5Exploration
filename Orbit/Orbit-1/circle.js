@@ -9,3 +9,5 @@ Circle.prototype.draw = function () {
   fill(90, 190, 20);
   ellipse(this.x, this.y, this.r * 2, this.r * 2);
 } 
+
+
