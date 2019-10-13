@@ -104,3 +104,22 @@ function draw() {
   // put drawing code here
 
 }
+
+
+
+
+
+/*
+
+1. Generate circles in grid
+2. Decay circles as x increased and y decreases
+3. Use Fill Algo to take up space between
+
+
+O .. .. ...
+O . ... . .
+O O.O. ...
+O O O O. .
+O.O.O.O O.
+
+*/
