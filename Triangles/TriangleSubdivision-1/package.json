@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "dat.gui": "^0.7.1",
-    "lodash": "4.17.10",
+    "lodash": "4.17.19",
     "p5": "^0.6.1",
     "stats-js": "^1.0.0-alpha1"
   },
